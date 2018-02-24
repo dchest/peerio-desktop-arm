@@ -7,4 +7,5 @@ peerio-desktop-release --key ~/.peerio-updater/arm.key \
                        --overrides dchest/peerio-desktop-arm \
                        --tag master \
                        --versioning arm \
+                       --platforms linux \
                        --publish
