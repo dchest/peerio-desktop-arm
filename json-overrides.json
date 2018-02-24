@@ -6,12 +6,9 @@
         },
         "author": "Technologies Peerio Inc. <support@peerio.com>",
         "build": {
-            "mac": {},
-            "nsis": {},
-            "win": {},
             "linux": {
                 "category": "Network",
-                "artifactName": "${name}-${os}-${arch}.${ext}",
+                "artifactName": "${name}-${os}-armv7l.${ext}",
                 "icon": "dist-assets/linux-icon",
                 "target": [
                   {
@@ -21,6 +18,10 @@
                     ]
                   }
                 ]
+              },
+              "appImage": {
+                "systemIntegration": "doNotAsk",
+                "artifactName": "${name}-${os}-armv7l.${ext}"
               }
             }
     },
