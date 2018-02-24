@@ -1,0 +1,42 @@
+{
+    "package.json": {
+        "repository": {
+            "type": "git",
+            "url": "git+https://github.com/dchest/peerio-desktop-arm.git"
+        },
+        "author": "Technologies Peerio Inc. <support@peerio.com>",
+        "build": {
+            "mac": {},
+            "nsis": {},
+            "win": {},
+            "linux": {
+                "category": "Network",
+                "artifactName": "${name}-${os}-${arch}.${ext}",
+                "icon": "dist-assets/linux-icon",
+                "target": [
+                  {
+                    "target": "AppImage",
+                    "arch": [
+                      "armv7l"
+                    ]
+                  }
+                ]
+              }
+            }
+    },
+    "app/package.json": {
+        "repository": {
+            "type": "git",
+            "url": "git+https://github.com/PeerioTechnologies/peerio-desktop-arm.git"
+        },
+        "author": "Technologies Peerio Inc. <support@peerio.com>",
+        "updater": {
+            "publicKeys": [
+                "RWQNSOhGPIJOYTGb64qhHu6JhNQf64TqOWRXGnnGWhKCsDuJxq56/E3T"
+            ],
+            "manifests": [
+                "github:dchest/peerio-desktop-arm"
+            ]
+        }
+    }
+}
